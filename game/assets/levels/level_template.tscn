@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/sprites/timeset.png" type="Texture" id=1]
 [ext_resource path="res://assets/characters/Player.tscn" type="PackedScene" id=2]
@@ -19,6 +19,13 @@
 0/shapes = [  ]
 0/z_index = 0
 
+[sub_resource type="GDScript" id=2]
+script/source = "extends KinematicBody2D
+
+class_name player:
+	pass
+"
+
 [node name="level_template" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -29,3 +36,4 @@ format = 1
 [node name="Player" parent="TileMap" instance=ExtResource( 2 )]
 position = Vector2( 515, 451 )
 scale = Vector2( 0.2, 0.2 )
+script = SubResource( 2 )
