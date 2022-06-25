@@ -9,11 +9,6 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "KinematicBody2D",
-"class": "Character",
-"language": "GDScript",
-"path": "res://src/Character.gd"
-}, {
 "base": "Reference",
 "class": "GutHookScript",
 "language": "GDScript",
@@ -24,13 +19,12 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/gut/test.gd"
 }, {
-"base": "Character",
+"base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://src/Player.gd"
 } ]
 _global_script_class_icons={
-"Character": "",
 "GutHookScript": "",
 "GutTest": "",
 "Player": ""
@@ -41,6 +35,10 @@ _global_script_class_icons={
 config/name="sidescroller"
 run/main_scene="res://assets/characters/Player.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/gut/plugin.cfg" )
 
 [input]
 
