@@ -27,8 +27,5 @@ jobs:
         test-dir: "res://Test/Unit"
         # default is false, set true to count asserts instead of tests
         assert-check: "true"
-        # not checked by default, set to a number to limit the
-        # maximum amount of failed tests for a passing test suite
-        max-fails: 3
         # to ensure all SCRIPT ERRORs dont contribute to your failure rate
         ignore-errors: "true"
