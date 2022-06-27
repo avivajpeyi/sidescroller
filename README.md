@@ -1,4 +1,4 @@
-[![Godot testing](https://github.com/avivajpeyi/sidescroller/actions/workflows/tests.yml/badge.svg)](https://github.com/avivajpeyi/sidescroller/actions/workflows/tests.yml) 
+[![Test](https://github.com/avivajpeyi/sidescroller/actions/workflows/tests.yml/badge.svg)](https://github.com/avivajpeyi/sidescroller/actions/workflows/tests.yml) [![Build](https://github.com/avivajpeyi/sidescroller/actions/workflows/build.yml/badge.svg)](https://github.com/avivajpeyi/sidescroller/actions/workflows/build.yml)
 
 # Sidescroller
 Procedurally generated 2d sidescrolling game  
