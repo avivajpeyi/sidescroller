@@ -1,3 +1,5 @@
+[![Godot testing](https://github.com/avivajpeyi/sidescroller/actions/workflows/tests.yml/badge.svg)](https://github.com/avivajpeyi/sidescroller/actions/workflows/tests.yml) 
+
 # Sidescroller
 Procedurally generated 2d sidescrolling game  
 
@@ -8,8 +10,7 @@ Procedurally generated 2d sidescrolling game
 
 ## Unit Testing
 
-> Add unit tests in `res://test/unit/test_<stuff>.gd` 
-> Add `func test_<stuff>` 
+> Add unit tests in `res://test/unit/test_<stuff>.gd`
+> Add `func test_<stuff>`
 > Open the scene `res://test/TestRunner.tscn`
 > `Command+R` to run the current scene + unit tests
-
