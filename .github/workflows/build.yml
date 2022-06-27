@@ -17,6 +17,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Setup
+        run: |
+          mkdir -v -p ~/.local/share/godot/templates
+          mv /root/.local/share/godot/templates/${GODOT_VERSION}.stable ~/.local/share/godot/templates/${GODOT_VERSION}.stable
       - name: Web Build
         run: |
           mkdir -v -p build/web
@@ -35,12 +39,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build/web # The folder the action should deploy.
-
-  # - name: Upload to Itch.io
-  #   uses: josephbmanley/butler-publish-itchio-action@master
-  #   env:
-  #     BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}  ## havent saved BUTLER_CREDENTIALS yet
-  #     CHANNEL: html5
-  #     ITCH_GAME: Sidescroller
-  #     ITCH_USER: avivajpeyi
-  #     PACKAGE: build/html5
