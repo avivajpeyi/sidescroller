@@ -1,4 +1,4 @@
-# Whenever a push is made to the branch then run the job
+name: Build
 on:
   push:
     branches:
