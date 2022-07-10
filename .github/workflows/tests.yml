@@ -5,14 +5,13 @@ on: [ push ]
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
+    steps:s
     - uses: actions/checkout@v2
     - uses: croconut/godot-tester@v2.5
       with:
-        continue-on-error: true
         # required
         version: "3.4.4"
-        # the type of release of godot that the tests should be run with
+        # the type of release of godot to build with
         release_type: "rc2"
         is-mono: "false"
         # the folder with your projects.godot file in it
